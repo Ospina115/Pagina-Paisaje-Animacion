@@ -1,0 +1,76 @@
+body {
+    background-image: url('fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+div#casa{
+    background: url('casa.webp');
+}
+
+div#nube{
+    background: url('nube.png');
+    width: 170px;
+    height: 150px;
+    position: absolute;
+    animation-name: animation-nube;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+div#lluvia{
+    background: url(lluvia.gif);
+    width: 170px;
+    height: 150px;
+    position: absolute;
+    animation-name: animation-lluvia;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+div#flor{
+    background: url(rosa.png);
+    width: 170px;
+    height: 260px;
+    position: absolute;
+    animation-name: animation-flor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    top: 100%; 
+    left: 50%; 
+}
+
+div#sol{
+    background: url(/images/sol.png);
+    width: 240px;
+    height: 230px;
+    position: absolute;
+    animation-name: animation-sol;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    top: 0px; 
+    left: 100%; 
+}
+
+@keyframes animation-nube {
+    0%{
+        left: 100%;
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left:0%
+    }
+}
+@keyframes animation-lluvia {
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left:100%
+    }
+}
